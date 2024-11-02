@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abubakar Abdirahman</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Nanum Gothic';
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #87CEFA;
+            padding: 1rem;
+        }
+        .navbar-brand, .navbar-nav .nav-link {
+            color: #004aad !important;
+            font-weight: 600;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #2A52BE !important;
+        }
+
+        /* Banner */
+        .banner {
+            background:url('Banner3.png') ;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        .banner h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+        }
+        .banner h2 {
+            font-size: 1.6rem;
+            font-weight: 500;
+            color: #D3ECF8;
+        }
+        .banner button {
+            background-color: #0056b3;
+            color: #fff;
+            padding: 10px 25px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 25px;
+            transition: background-color 0.3s ease;
+        }
+        .banner button:hover {
+            background-color: #003f7f;
+        }
+
+        /* Section Headings */
+        section h2 {
+            font-weight: bold;
+            text-align: center;
+            color: #004aad;
+            margin-bottom: 2rem;
+        }
+
+        /* About Me */
+        #about p {
+            font-size: 1.1rem;
+            color: #444;
+        }
+        #about img {
+            border-radius: 15px;
+            box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Skills */
+        .progress-bar {
+            background-color: #2A52BE;
+            transition: width 1s ease-in-out;
+        }
+
+        /* Social Media */
+        .social-media a {
+            color: #2A52BE;
+            font-size: 1.8rem;
+            margin-right: 15px;
+            transition: color 0.3s;
+        }
+        .social-media a:hover {
+            color: #004aad;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #87CEFA;
+            color: #004aad;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        /* Blog Section */
+        #blog img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        
+               /* Container background and padding */
+        .project-section {
+            background-color: white; /* Blue background */
+            color: black;
+            padding: 60px 0;
+        }
+
+        /* Card styling */
+        .card {
+            background-color: #ffffff;
+            color: black;
+            border: none;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Image styling and transition */
+        .card-img-top {
+            transition: transform 0.3s ease;
+        }
+        .card:hover .card-img-top {
+            transform: scale(1.1);
+        }
+
+        /* Overlay styling */
+        .card-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6); /* Transparent dark overlay */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            color: white;
+        }
+        .card:hover .card-overlay {
+            opacity: 1;
+        }
+
+        /* Button styling */
+        .btn {
+            background-color: #007bff; /* Button background color */
+            color: white;
+            border-radius: 20px; /* Rounded corners */
+            border: none;
+            margin: 5px;
+            padding: 8px 20px;
+            transition: background-color 0.3s ease;
+        }
+        .btn i {
+            margin-right: 8px; /* Add space between icon and text */
+        }
+        .btn:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+    </style> 
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+      
+        <a class="navbar-brand" href="#home"><img style="height:40px;width:40px;" src="Logo1.png" alt="Logo"> Abubakar Abdirahman</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Banner Section -->
+<header id="home" class="banner">
+    <div class="container">
+        <h1>Hey! I am <span style="color: #D3ECF8;">Abubakar Abdirahman</span></h1>
+        <h2>I am a <span id="typing-text" class="typing-text" style="color: #ADD8E6;"></span><span class="cursor">|</span></h2>
+        <button onclick="downloadResume()">Download Resume</button>
+    </div>
+</header>
+
+<!-- CSS for Typing Animation -->
+<style>
+    .typing-text {
+        font-weight: bold;
+        font-family: 'Century Gothic', sans-serif;
+    }
+
+    .cursor {
+        display: inline-block;
+        width: 1px;
+        background-color: #ADD8E6;
+        animation: blink 0.8s infinite;
+    }
+
+    /* Blinking Cursor */
+    @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+    }
+
+    /* Banner Styling */
+    .banner {
+        background: linear-gradient(135deg, #004aad, #87CEFA);
+        color: white;
+        padding: 80px 0;
+        text-align: center;
+    }
+
+    .banner h1 {
+        font-size: 2.8rem;
+        font-weight: 700;
+    }
+
+    .banner h2 {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: #D3ECF8;
+    }
+
+    .banner button {
+        background-color: #0056b3;
+        color: #fff;
+        padding: 10px 25px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 25px;
+        transition: background-color 0.3s ease;
+    }
+
+    .banner button:hover {
+        background-color: #003f7f;
+    }
+
+    
+</style>
+
+<!-- JavaScript for Typing Animation -->
+<script>
+    const typingText = document.getElementById("typing-text");
+    const texts = ["Graphic Designer", "Developer", "Creative Thinker", "Project Manager"];
+    let textIndex = 0;
+    let charIndex = 0;
+
+    function type() {
+        if (charIndex < texts[textIndex].length) {
+            typingText.textContent += texts[textIndex].charAt(charIndex);
+            charIndex++;
+            setTimeout(type, 100); // Speed of typing
+        } else {
+            setTimeout(erase, 2000); // Pause before erasing
+        }
+    }
+
+    function erase() {
+        if (charIndex > 0) {
+            typingText.textContent = texts[textIndex].substring(0, charIndex - 1);
+            charIndex--;
+            setTimeout(erase, 50); // Speed of erasing
+        } else {
+            textIndex = (textIndex + 1) % texts.length;
+            setTimeout(type, 100); // Start typing next text
+        }
+    }
+
+    // Start the typing effect on page load
+    document.addEventListener("DOMContentLoaded", () => {
+        setTimeout(type, 1000); // Initial delay before typing
+    });
+</script>
+
+<!-- About Section -->
+<!-- About Section -->
+<section id="about" class="py-5" style="background-image: url('banner1.png'); background-size: cover; background-position: center; color: white;border-bottom-left-radius:20px;border-bottom-right-radius:20px;">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <!-- Profile Image -->
+                <img style="width:400px;height:400px" src="About.JPG" alt="Abubakar Abdirahman" class="img-fluid rounded-circle shadow-lg">
+            </div>
+            <div class="col-lg-6">
+                <h2 style="color:white;">About Me</h2>
+                <p style="color: white;">Hello! I'm Abubakar Abdirahman, a passionate graphic designer and developer. I specialize in creating visually compelling designs and functional, user-friendly applications. My journey in the digital world began with a love for art and technology, which I merged into a rewarding career in design and development. With experience across various platforms and languages, I am equipped to handle diverse projects from conception to completion.</p>
+                <p style="color:white;">My approach to design is rooted in a keen understanding of visual storytelling, while my development skills allow me to bring those stories to life on the web and mobile platforms. Let's connect and create something amazing together!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Courses Section -->
+<section id="courses" class="py-5 bg-light">
+    <div class="container">
+        <h2>Courses</h2>
+        <div class="row text-center">
+            <!-- Card 1: WordPress -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <img src="Wp.png" class="card-img-top" alt="WordPress Course">
+                    <div class="card-body">
+                        <h5 class="card-title">WordPress</h5>
+                        <p class="card-text">Create and manage websites using WordPress, the popular content management system.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2: HTML & CSS -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <img src="html.jpg" class="card-img-top" alt="HTML and CSS Course">
+                    <div class="card-body">
+                        <h5 class="card-title">HTML & CSS</h5>
+                        <p class="card-text">Learn the foundational languages of web development for creating beautiful, responsive websites.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3: PHP -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <img src="php.jpg" class="card-img-top" alt="PHP Course">
+                    <div class="card-body">
+                        <h5 class="card-title">PHP</h5>
+                        <p class="card-text">Dive into server-side programming and build dynamic, data-driven websites with PHP.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 4: JavaScript -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <img src="Javascript.png" class="card-img-top" alt="JavaScript Course">
+                    <div class="card-body">
+                        <h5 class="card-title">JavaScript</h5>
+                        <p class="card-text">Master JavaScript to create interactive, responsive websites that engage users.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 5: Bootstrap -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <img src="bootstrap.png" class="card-img-top" alt="Bootstrap Course">
+                    <div class="card-body">
+                        <h5 class="card-title">Bootstrap</h5>
+                        <p class="card-text">Build responsive and visually appealing websites quickly with Bootstrap.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 6: Graphic Design -->
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm">
+                    <img src="Graphic.png" class="card-img-top" alt="Graphic Design Course">
+                    <div class="card-body">
+                        <h5 class="card-title">Graphic Design</h5>
+                        <p class="card-text">Learn essential graphic design skills to create beautiful visuals and branding materials.</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>
+
+<!-- Experience Section -->
+<!-- Experience Section -->
+<section id="experience" class="py-5">
+    <div class="container">
+        <h2>Experience</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card experience-card text-white shadow" style="background-image: url('Banner3.png')">
+                    <div class="card-body">
+                        <h5  class="card-title">Full Stack Developer</h5>
+                        <p class="card-text">Developed responsive web applications and handled both front-end and back-end development, ensuring smooth and dynamic user experiences.</p>
+                        <p class="card-text"><small>2024 - Maalin Technology</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card experience-card text-white shadow" style="background-image: url('Banner3.png')">
+                    <div class="card-body">
+                        <h5 class="card-title">Graphic Designer</h5>
+                        <p class="card-text">Designed logos, marketing materials, and digital assets, achieving brand consistency and enhancing client engagement through visual creativity.</p>
+                        <p class="card-text"><small>2023 - 2024</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card experience-card text-white shadow" style="background-image: url('Banner3.png')">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Manager</h5>
+                        <p class="card-text">Led cross-functional teams, managing projects from inception to completion, ensuring timely delivery and alignment with business objectives.</p>
+                        <p class="card-text"><small>2020 - 2022</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Zoom effect on hover */
+    .experience-card {
+        transition: transform 0.3s ease;
+    }
+
+    .experience-card:hover {
+        transform: scale(1.05); /* Zooms the card by 5% */
+    }
+</style>
+
+<!--projecta section-->
+
+<div class="container project-section">
+    <h2 style="color:#2A52BE;" class="text-center mb-5">Projects</h2>
+    <div class="row">
+        <!-- Project Card 1 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card">
+                <img src="site-ecommerce.jpg" class="card-img-top" alt="Project 1">
+                <div class="card-overlay">
+                    <a href="#" class="btn"><i class="fas fa-book"></i>Read More</a>
+                    <a href="#" class="btn"><i class="fas fa-eye"></i>Demo</a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Ecommerce Website</h5>
+                    <p class="card-text">We built a massive and fully functional eccomerce site with Post management for our cleint.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card">
+                <img src="Stad.png" class="card-img-top" alt="Project 2">
+                <div class="card-overlay">
+                    <a href="#" class="btn"><i class="fas fa-book"></i>Read More</a>
+                    <a href="#" class="btn"><i class="fas fa-eye"></i>Demo</a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Stadium Managent System</h5>
+                    <p class="card-text">We developed and integrated stadium managing system. </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Card 3 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card">
+                <img src="Dental.jpg" class="card-img-top" alt="Project 3">
+                <div class="card-overlay">
+                    <a href="#" class="btn"><i class="fas fa-book"></i>Read More</a>
+                    <a href="#" class="btn"><i class="fas fa-eye"></i>Demo</a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Dental Management System</h5>
+                    <p class="card-text">Full functional syatem for Dental Clenics.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Card 4 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card">
+                <img src="Trans.jpg" class="card-img-top" alt="Project 4">
+                <div class="card-overlay">
+                    <a href="#" class="btn"><i class="fas fa-book"></i>Read More</a>
+                    <a href="#" class="btn"><i class="fas fa-eye"></i>Demo</a>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title"> Digital Transportation system </h5></h5>
+                    <p class="card-text">aoutomating and tracking delivery and cargo services in online. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Skills Section -->
+<section id="skills" class="py-5 bg-light">
+    <div class="container">
+        <h2>Skills</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Web Development</h5>
+                <div class="progress mb-3">
+                    <div class="progress-bar" style="width: 90%;">90%</div>
+                </div>
+                <h5>Graphic Design</h5>
+                <div class="progress mb-3">
+                    <div class="progress-bar" style="width: 85%;">85%</div>
+                </div>
+                <h5>PHP & MySQL</h5>
+                <div class="progress mb-3">
+                    <div class="progress-bar" style="width: 80%;">80%</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h5>JavaScript</h5>
+                <div class="progress mb-3">
+                    <div class="progress-bar" style="width: 75%;">75%</div>
+                </div>
+                <h5>HTML & CSS</h5>
+                <div class="progress mb-3">
+                    <div class="progress-bar" style="width: 90%;">90%</div>
+                </div>
+                <h5>WordPress</h5>
+                <div class="progress mb-3">
+                    <div class="progress-bar" style="width: 85%;">85%</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h5>ReactJS</h5>
+                <div class="progress mb-3">
+                    <div class="progress-bar" style="width: 70%;">70%</div>
+                </div>
+                <h5>UI/UX Design</h5>
+                <div class="progress mb-3">
+                    <div class="progress-bar" style="width: 80%;">80%</div>
+                </div>
+                <h5>Project Management</h5>
+                <div class="progress mb-3">
+                    <div class="progress-bar" style="width: 75%;">75%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Blog Section -->
+<section id="blog" class="py-5">
+    <div class="container">
+        <h2>Blog</h2>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm">
+                    <img src="Webdev.jpg" class="card-img-top" alt="Blog Post">
+                    <div class="card-body">
+                        <h5 class="card-title">Understanding Web Development</h5>
+                        <p class="card-text">A brief overview of web development and its importance in the modern world.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card shadow-sm">
+                    <img src="Design.jpg" class="card-img-top" alt="Blog Post">
+                    <div class="card-body">
+                        <h5 class="card-title">Design Trends of 2024</h5>
+                        <p class="card-text">Exploring the latest trends in graphic design for the upcoming year.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-light">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 Abubakar Abdirahman. All Rights Reserved.</p>
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+<script>
+    // Typing Animation for Changing Text
+    const texts = ["Web Developer", "Graphic Designer","Project Manager"];
+    let index = 0;
+    
+    function typeText() {
+        let text = texts[index].split("");
+        let typing = setInterval(() => {
+            if (text.length > 0) {
+                document.getElementById("changingText").innerHTML += text.shift();
+            } else {
+                clearInterval(typing);
+                setTimeout(() => {
+                    index = (index + 1) % texts.length;
+                    document.getElementById("changingText").innerHTML = "";
+                    typeText();
+                }, 2000);
+            }
+        }, 100);
+    }
+
+    // Start typing animation
+    typeText();
+
+    // Download resume function
+    function downloadResume() {
+        // Placeholder for resume download functionality
+        alert("Resume downloaded!");
+    }
+</script>
+</body>
+</html>
+        
